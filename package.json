@@ -1,7 +1,7 @@
 {
   "name": "vue-responsive-vh",
   "description": "Simple Plugin for URL Bar Resizing on mobile devices.",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "license": "MIT",
   "repository": "https://github.com/oezkancodes/vue-responsive-vh",
   "private": false,

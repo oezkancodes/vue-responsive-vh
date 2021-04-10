@@ -6,14 +6,14 @@ const Plugin = {
     // v-min-height-screen Directive
     Vue.directive('min-h-screen', {
       bind(el) {
-        el.classList.add('min-h-screen');
+        el.classList.add('min-h-screen-fix');
       },
     });
 
     // v-height-screen Directive
     Vue.directive('h-screen', {
       bind(el) {
-        el.classList.add('h-screen');
+        el.classList.add('h-screen-fix');
       },
     });
 

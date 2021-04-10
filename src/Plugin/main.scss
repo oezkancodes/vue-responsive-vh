@@ -1,8 +1,8 @@
-.min-h-screen {
+.min-h-screen-fix {
   min-height: 100vh; /* Fallback */
   min-height: calc(var(--vh, 1vh) * 100);
 }
-.h-screen {
+.h-screen-fix {
   height: 100vh; /* Fallback */
   max-height: calc(var(--vh, 1vh) * 100);
 }
