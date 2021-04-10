@@ -11,14 +11,19 @@ npm install vue-responsive-vh
 
 ## Registration
 
+You need to do two things:
+- Import and use the Plugin in Vue
+- Import the CSS classes from the Plugin (important)
+
 ### Vue.js
 
-First go to your ``main.js``.
+Go to your ``main.js`` and use the Plugin as follows:
 
 ``` javascript
 // ~/src/main.js
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
+import 'vue-responsive-vh/dist/vue-responsive-vh.css';
 
 Vue.use(VueResponsiveVh)
 ```
@@ -29,11 +34,13 @@ Registration complete ✨.
 
 For Nuxt.js we will create a simple Plugin.
 First create a file named ``vue-responsive-vh.js`` in your ``~/plugins`` folder.
+Then register the Plugin as follows:
 
 ``` javascript
 // ~/plugins/vue-responsive-vh.js
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
+import 'vue-responsive-vh/dist/vue-responsive-vh.css';
 
 Vue.use(VueResponsiveVh)
 ```
