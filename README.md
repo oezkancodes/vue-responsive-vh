@@ -1,7 +1,16 @@
-# vue-responsive-vh
 
-This Plugin solves the URL Bar Resizing issue on mobile devices. [Read here](https://developers.google.com/web/updates/2016/12/url-bar-resizing).
+This Plugin solves the URL Bar Resizing issue with viewport units on mobile devices. [Read here](https://developers.google.com/web/updates/2016/12/url-bar-resizing).
 
+![Preview](static/vue-responsive-vh.jpg "Preview")
+
+# Navigation
+- [Navigation](#navigation)
+  - [Installation](#installation)
+  - [Registration](#registration)
+    - [Vue.js](#vuejs)
+    - [Nuxt.js](#nuxtjs)
+  - [Usage](#usage)
+  - [Fallback](#fallback)
 
 ## Installation
 
@@ -11,16 +20,13 @@ npm install vue-responsive-vh
 
 ## Registration
 
-You need to do two things:
-- Import and use the Plugin in Vue
-- Import the CSS classes from the Plugin (important)
-
 ### Vue.js
 
 Go to your ``main.js`` and use the Plugin as follows:
 
 ``` javascript
 // ~/src/main.js
+
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
 import 'vue-responsive-vh/dist/vue-responsive-vh.css';
@@ -38,6 +44,7 @@ Then register the Plugin as follows:
 
 ``` javascript
 // ~/plugins/vue-responsive-vh.js
+
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
 import 'vue-responsive-vh/dist/vue-responsive-vh.css';
@@ -49,6 +56,7 @@ Then add the Plugin into the `plugins: []` Array in your Nuxt.js configuration f
 
 ``` javascript
 // ~/nuxt.config.js 
+
 export default {
 
   plugins: [
@@ -64,15 +72,16 @@ Registration complete ✨.
 
 You can choose between two Directives:
 
-| Directive          | Description                                   |
-| :----------------- | :-------------------------------------------- |
-| ``v-min-h-screen`` | Min height of the element is screen height    |
-| ``v-h-screen``     | Height of the element ist exact screen height |
+| Directive          | Description                                    | Changed CSS Property |
+| :----------------- | :--------------------------------------------- | :------------------- |
+| ``v-min-h-screen`` | Min height of the element is screen height.    | ``min-height``       |
+| ``v-h-screen``     | Height of the element ist exact screen height. | ``height``           |
 
 Add the Directive you need to any element you choose to give it a responsive ``vh``.
 
-``` html
+``` jsx
 // YourComponent.vue
+
 <template>
   <div v-min-h-screen>
     ...
@@ -80,11 +89,16 @@ Add the Directive you need to any element you choose to give it a responsive ``v
 </template>
 ```
 
-``` html
+``` jsx
 // YourComponent.vue
+
 <template>
   <div v-h-screen>
     ...
   </div>
 </template>
 ```
+
+## Fallback
+
+If there is an issue with the calculation or missing Browser Support, the default Fallback is `100vh`.
