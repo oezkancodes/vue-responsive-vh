@@ -29,7 +29,7 @@ Go to your ``main.js`` and use the Plugin as follows:
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
-import 'vue-responsive-vh/dist/vue-responsive-vh.css';
+import 'vue-responsive-vh/dist/vue-responsive-vh.css'
 
 Vue.use(VueResponsiveVh)
 ```
@@ -47,7 +47,7 @@ Then register the Plugin as follows:
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
-import 'vue-responsive-vh/dist/vue-responsive-vh.css';
+import 'vue-responsive-vh/dist/vue-responsive-vh.css'
 
 Vue.use(VueResponsiveVh)
 ```
