@@ -25,7 +25,7 @@ npm install vue-responsive-vh
 Go to your ``main.js`` and use the Plugin as follows:
 
 ``` javascript
-// ~/src/main.js
+// ./src/main.js
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
@@ -77,7 +77,7 @@ You can choose between two Directives:
 | ``v-min-h-screen`` | Min height of the element is screen height.    | ``min-height``       |
 | ``v-h-screen``     | Fixed height of the element is screen height.  | ``height``           |
 
-Add the Directive you need to any element you choose to give it a responsive ``vh``.
+Add the Directive you need to any element you choose to give it a responsive ``vh``, which depends on the appearance of the URL Bar.
 
 ``` jsx
 // YourComponent.vue
