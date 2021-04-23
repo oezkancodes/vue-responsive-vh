@@ -29,7 +29,7 @@ Go to your ``main.js`` and use the Plugin as follows:
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
-import 'vue-responsive-vh/dist/vue-responsive-vh.css';
+import 'vue-responsive-vh/dist/vue-responsive-vh.css'
 
 Vue.use(VueResponsiveVh)
 ```
@@ -47,7 +47,7 @@ Then register the Plugin as follows:
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
-import 'vue-responsive-vh/dist/vue-responsive-vh.css';
+import 'vue-responsive-vh/dist/vue-responsive-vh.css'
 
 Vue.use(VueResponsiveVh)
 ```
@@ -75,9 +75,9 @@ You can choose between two Directives:
 | Directive          | Description                                    | Changed CSS Property |
 | :----------------- | :--------------------------------------------- | :------------------- |
 | ``v-min-h-screen`` | Min height of the element is screen height.    | ``min-height``       |
-| ``v-h-screen``     | Height of the element ist exact screen height. | ``height``           |
+| ``v-h-screen``     | Fixed height of the element is screen height.  | ``height``           |
 
-Add the Directive you need to any element you choose to give it a responsive ``vh``.
+Add the Directive you need to any element you choose to give it a responsive ``vh``, which depends on the appearance of the URL Bar.
 
 ``` jsx
 // YourComponent.vue
