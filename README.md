@@ -1,7 +1,7 @@
 
 This Plugin solves the URL Bar Resizing issue with viewport units on mobile devices. [Read here](https://developers.google.com/web/updates/2016/12/url-bar-resizing).
 
-![Preview](static/vue-responsive-vh.jpg "Preview")
+![Preview](static/vue-responsive-vh.png "Preview")
 
 # Navigation
 - [Navigation](#navigation)
@@ -25,7 +25,7 @@ npm install vue-responsive-vh
 Go to your ``main.js`` and use the Plugin as follows:
 
 ``` javascript
-// ~/src/main.js
+// ./src/main.js
 
 import Vue from 'vue'
 import VueResponsiveVh from 'vue-responsive-vh'
